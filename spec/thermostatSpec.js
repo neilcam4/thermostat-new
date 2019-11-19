@@ -64,8 +64,19 @@ describe("THERMOSTAT", function(){
         thermostat.decrease()
         thermostat.decrease()
         thermostat.decrease()
-        console.log(thermostat.temperature)
         thermostat.checkEnergyUsage()
         expect(thermostat.energyUsage).toEqual("LOW")
+    })
+    it("describes current energy usage as medium if above 18 leSs than 25", function(){
+        let thermostat = new Thermostat ()
+        thermostat.temperature = 22;
+        thermostat.checkEnergyUsage()
+        expect(thermostat.energyUsage).toEqual("MEDIUM")
+    })
+    it("describes current energy usage as HIGH if above OR EQUAL TO 25", function(){
+        let thermostat = new Thermostat ()
+        thermostat.temperature = 26;
+        thermostat.checkEnergyUsage()
+        expect(thermostat.energyUsage).toEqual("HIGH")
     })
 })
