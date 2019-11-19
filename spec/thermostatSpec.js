@@ -79,4 +79,9 @@ describe("THERMOSTAT", function(){
         thermostat.checkEnergyUsage()
         expect(thermostat.energyUsage).toEqual("HIGH")
     })
+    it("describes turning power savong mode off", function(){
+        let thermostat = new Thermostat ()
+        thermostat.powerSavingModeOff()
+        expect(thermostat.powerSaveMode).toEqual(false)
+    })
 })
