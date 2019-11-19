@@ -6,6 +6,7 @@ let MAX_TEMP_PSV = 25
 function Thermostat(){
     this.temperature = DEFAULT_TEMP;
     this.powerSaveMode = true;
+    this.energyUsage = "Medium"
 }
 
 Thermostat.prototype.increase =  function(){
@@ -36,4 +37,10 @@ Thermostat.prototype.powerSavingModeOn =  function(){
 
 Thermostat.prototype.reset = function(){
     return this.temperature = DEFAULT_TEMP;
+}
+
+Thermostat.prototype.checkEnergyUsage = function(){
+    if(this.temperature < 19){
+        return this.energyUsage = "LOW"
+    }
 }

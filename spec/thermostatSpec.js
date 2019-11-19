@@ -56,4 +56,16 @@ describe("THERMOSTAT", function(){
         thermostat.reset()
         expect(thermostat.temperature).toEqual(DEFAULT_TEMP)
     })
+    // You can ask about the thermostat's current energy usage: 
+    // < 18 is low-usage,
+    //  < 25 is medium-usage, anything else is high-usage.
+    it("describes current energy usage as low if below 18", function(){
+        let thermostat = new Thermostat ()
+        thermostat.decrease()
+        thermostat.decrease()
+        thermostat.decrease()
+        console.log(thermostat.temperature)
+        thermostat.checkEnergyUsage()
+        expect(thermostat.energyUsage).toEqual("LOW")
+    })
 })
