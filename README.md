@@ -41,3 +41,5 @@ User to see wind speed
 User to see sunrise time in hours/minutes/seconds
 
 User to see sunset time in hours/minutes/seconds
+
+![alt text](https://github.com/neilcam4/thermpstat-new/thermostat.png "Thermostat")
