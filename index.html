@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <style rel ="stylesheet" src = "/public/main.css"></style>
+    <script src=""></script>
+    <link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thermostat</title>
 </head>
 <body>
-    <h1>Thermostat and Global Weather</h1>
-    <div><h1 >Current Home Temperature: <span id ="temperature"></span> &#176;C</h1></div>
-    <div><h3>Energy Usage Level: <span id="energyUsage"></span></h3></div>
-    <div><h4>Power Saving Mode : <span id="PSV"></span></h4></div>
-    <button id="increaseTemp">Increase Temperature</button>
-    <button id="decreaseTemp">Decrease Temperature</button>
-    <button id="powerSaveOn">Power Save On</button>
-    <button id="powerSaveOff">Power Save Off</button>
+    <div class = "container">
+        <div class="alert alert-success" role="alert">
+            <h1>Thermostat and Global Weather</h1>
+        </div>
+    </div>
+        <div class ="container" style="margin:auto">
+            <div style="text-align:center">
+                <h2 >Current Home Temperature: <span id ="temperature"></span> &#176;C</h2>
+                <h3>Energy Usage Level: <span id="energyUsage"></span></h3>
+                <h4>Power Saving Mode : <span id="PSV"></span></h4><br>
+                <button type="button" class="btn btn-danger" id="increaseTemp">Increase Temperature</button>
+                <button type="button" class="btn btn-primary" id="decreaseTemp">Decrease Temperature</button>
+                <button type="button" class="btn btn-success" id="powerSaveOn">Power Save On</button>
+                <button type="button" class="btn btn-warning" id="powerSaveOff">Power Save Off</button>
+            </div>
+        </div><br>
 
     <div class="container">
+            <div class="alert alert-info" role="alert">
         <h1>Select City below to check the local Weather</h1>
+        </div>
         <section>
                     <select id="current-city" >
                         <option value="baghdad">Baghdad</option>
-                        <option value="new+york">New York</option>
+                        <option value="chicago">Chicago</option>
                         <option value="london">London</option>
                         <option value="paris">Paris</option>
                         <option value="tokyo">Tokyo</option>
                     </select>
         </section>
+    </div>
+    <div class ="container" style="margin:auto">
+        <div style="text-align:center">
         <h1>The temperature in <span id="city"></span> is <span id="temp"></span> &#176;C</h1>
         <h2>The wind speed is <span id="wind"></span> mph</h2>
         <h3>The sun rises today at <span id ="sunrise"></span></h3>
         <h3>The sun sets today at <span id ="sunset"></span></h3>
-
+        </div>
     </div>
     
     <script src = "./src/thermostat.js"></script>
