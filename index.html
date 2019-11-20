@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thermostat</title>
@@ -17,6 +17,14 @@
     <button id="decreaseTemp">Decrease Temperature</button>
     <button id="powerSaveOn">Power Save On</button>
     <button id="powerSaveOff">Power Save Off</button>
+
+    <div class="container">
+        <h1>The temperature in <span id="city"></span> is <span id="temp"></span> &#176;C</h1>
+        <h2>The wind speed is <span id="wind"></span> mph</h2>
+        <h3>The sun rises today at <span id ="sunrise"></span></h3>
+        <h3>The sun sets today at <span id ="sunset"></span></h3>
+
+    </div>
     
     <script src = "./src/thermostat.js"></script>
     <script src = "./src/interface.js"></script>
