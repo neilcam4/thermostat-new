@@ -42,5 +42,5 @@ User to see sunrise time in hours/minutes/seconds
 
 User to see sunset time in hours/minutes/seconds
 
-(https://github.com/neilcam4/thermostat-new/blob/master/thermostat.png "Thermostat")
+![Thermostat](https://github.com/neilcam4/thermostat-new/blob/master/thermostat.png "Thermostat")
 
