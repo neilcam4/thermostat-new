@@ -52,3 +52,4 @@ Thermostat.prototype.checkEnergyUsage = function(){
 Thermostat.prototype.powerSavingModeOff = function(){
     return this.powerSaveMode = false;
 }
+
