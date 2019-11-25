@@ -2,7 +2,7 @@
 
 This is a hobby project, built with Javascript deployed here http://pure-meadow-00554.herokuapp.com/
 
-The first goal was to produce a thermostat that has a number of prototype functions to change the thermostat according to the conditions below. It was built with TDD and Jasmine test suite.
+The first goal was to produce a thermostat that has a number of prototype functions to change the thermostat according to the User Stories below. It was built with TDD and Jasmine test suite.
 
 The second goal was to add Global Weather Checker is built using an API call to Open Weather API. The object received is reformatted and displayed on screen.
 
