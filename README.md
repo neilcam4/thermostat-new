@@ -1,10 +1,10 @@
 # Thermostat and Global Weather API
 
-This is a hobby project, built with Javascript. 
+This is a hobby project, built with Javascript deployed here http://pure-meadow-00554.herokuapp.com/
 
-The function thermostat has a number of prototype functions to change the thermostat according to the conditions below. It was built with TDD and Jasmine test suite.
+The first goal was to produce a thermostat that has a number of prototype functions to change the thermostat according to the conditions below. It was built with TDD and Jasmine test suite.
 
-The Global Weather Checker is built using an API call to Open Weather API. The object received is reformatted and displayed on screen.
+The second goal was to add Global Weather Checker is built using an API call to Open Weather API. The object received is reformatted and displayed on screen.
 
 Bootstrap is used to style the page.
 
