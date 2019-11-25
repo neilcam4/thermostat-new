@@ -44,7 +44,7 @@ User to see sunset time in hours/minutes/seconds
 `Screenshot of Global Weather Checker and Thermostat`
 
 
-![Thermostat](https://github.com/neilcam4/thermostat-new/blob/master/thermostat.png "Thermostat")
+![Thermostat](https://github.com/neilcam4/thermostat-new/blob/master/thermostat1.png "Thermostat")
 
 `Screenshot of Jasmine Test Suite for Thermostat`
 
