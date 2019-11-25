@@ -2,7 +2,7 @@
 
 This is a hobby project, built with Javascript deployed here http://pure-meadow-00554.herokuapp.com/
 
-The first goal was to produce a thermostat that has a number of prototype functions to change the thermostat according to the conditions below. It was built with TDD and Jasmine test suite.
+The first goal was to produce a thermostat that has a number of prototype functions to change the thermostat according to the User Stories below. It was built with TDD and Jasmine test suite.
 
 The second goal was to add Global Weather Checker is built using an API call to Open Weather API. The object received is reformatted and displayed on screen.
 
@@ -41,6 +41,13 @@ User to see wind speed
 User to see sunrise time in hours/minutes/seconds
 
 User to see sunset time in hours/minutes/seconds
+`Screenshot of Global Weather Checker and Thermostat`
 
-![Thermostat](https://github.com/neilcam4/thermostat-new/blob/master/thermostat.png "Thermostat")
+
+![Thermostat](https://github.com/neilcam4/thermostat-new/blob/master/thermostat1.png "Thermostat")
+
+`Screenshot of Jasmine Test Suite for Thermostat`
+
+
+![Tests](https://github.com/neilcam4/thermostat-new/blob/master/jasmine_tests.png "Tests")
 
